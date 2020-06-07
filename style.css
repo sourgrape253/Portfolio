@@ -65,13 +65,6 @@ nav-link{
   font-size: 4em;
   margin: 1rem;
 }
-.fun{
-  width: 100%;
-  margin-bottom: 2rem;
-}
-.gif{
-  max-width: 100%;
-}
 .social a{
   font-size: 4.5em;
   padding: 3rem;
@@ -91,7 +84,7 @@ nav-link{
 .fa-linkedin:hover,
 .fa-github:hover,
 .fa-twitter:hover,
-.fa-envelope-o:hover{
+.fa-envelope:hover{
   color: #d5d5d5;
 }
 footer{
