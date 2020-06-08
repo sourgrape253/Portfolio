@@ -148,11 +148,11 @@ footer{
   bottom: 0%;
 }
 .carousel-caption h1{
-  font-size: 200%;
+  font-size: 150%;
 
 }
   .carousel-caption h3{
-   font-size: 110%;
+   font-size: 100%;
     font-weight: 400;
    text-shadow: 1px 1px 10px #000;
    padding-bottom: 0.2rem;
@@ -236,6 +236,7 @@ figure {
 
 section {
   padding: 100px 0;
+
 }
 section h2.section-heading {
   font-size: 40px;
@@ -258,7 +259,8 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   max-width: 400px;
   margin: 0 auto;
   cursor: pointer;
