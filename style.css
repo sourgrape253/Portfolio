@@ -112,6 +112,9 @@ footer{
 
 }
 @media (max-width: 768px) {
+  #portfolio .portfolio-item {
+   margin: 0 0 30px;
+  }
 .carousel-caption{
   position: absolute;
   bottom: 20%;
@@ -139,6 +142,7 @@ footer{
   }
 }
 @media (max-width: 576px) {
+
 .carousel-caption{
   position: absolute;
   bottom: 0%;
@@ -212,6 +216,20 @@ figure {
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
     padding: 1rem;
+}
+
+.iframe-container{
+  position: relative;
+  width: 100%
+  
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*modal styling*/
@@ -305,11 +323,7 @@ section h3.section-subheading {
   z-index: 2;
 }
 
-@media (min-width: 767px) {
-  #portfolio .portfolio-item {
-    margin: 0 0 30px;
-  }
-}
+
 
 .portfolio-modal {
   padding-right: 0px !important;
