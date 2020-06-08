@@ -40,9 +40,11 @@
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#">Contact</a>
+			</li>
 	</div>
 
 </div>
+
 </nav>
 <!--- Image Slider -->
 <div id="slides" class="carousel slide carousel-fade" data-ride="carousel">
@@ -52,12 +54,11 @@
 		<li data-target="#slides" data-slide-to="2"></li>
 	</ul>
 <div class="carousel-inner">
-	
-		<div class="carousel-caption">
-			<h1 class="display-2">Joseph Newman</h1>
-			<h3>Graduate Software Engineer</h3>
-			<a class="nav-link" href="#projects"> <button type="button" class="btn btn-outline-light btn-lg">My Portfolio</button></a>
-		</div>
+	<div class="carousel-caption">
+		<h1 class="display-2">Joseph Newman</h1>
+		<h3>Graduate Software Engineer</h3>
+		<a class="nav-link" href="#projects"> <button type="button" class="btn btn-outline-light btn-lg">My Portfolio</button></a>
+	</div>
 	<div class="carousel-item active">
 		<img class="d-block w-100" src="img/dice1.png">
 	</div>
@@ -71,36 +72,11 @@
 </div>
 
 
-<!--- About Me Section -->
-<div class="container-fluid padding" id="aboutMe">
-<br>
-<br>
-<br>
-<div class="row padding justify-content-center">
-	<div class="col-lg-4">
-		<img src="img/me1.png" class="img-fluid">
-	</div>
-	<div class="col-lg-4 my-auto">
-		<h2> About Me</h2>
-		<p>I am a software engineer who loves developing and playing games. I also have an avid passion for sports such as snowboarding and mountain biking.</p>
-		<br>
-		<p>I recently graduated with a Bachelor of Software Engineering specializing in Game Programmingfrom Media Design School in Auckland New Zealand. I have experience making games with Unreal Engine 4, Unity, and with OpenGl using C++. All as solo work, or part of a team with other artists and programmers. I am a strong advocate for success through teamwork, leadership and an overall positive approach to problem solving.</p>
-		
-		<br>
-		<a href="mailto: jjnewman253@gmail.com" class="btn btn-primary">Let's Get in Touch!</a>
 
-	</div>
-
-</div>
-</div>
-
-<br>
-<br>
-<br>
 
 
 <!--- Portfolio Section -->
-<section class="bg-light"  id="portfolio">
+<section id="portfolio">
 <div class="container-fluid padding">
 <div class="row welcome text-left">
 	<div class="col-12">
@@ -115,7 +91,7 @@
 				<i class="fa fa-plus fa-3x"></i>
 			</div>
 		</div>
-		<img class="cimg-project" src="img/lostNomad1.png" alt="">
+		<img class="img-project" src="img/lostNomad1.png" alt="">
 	</a>
 	<div class="portfolio-caption">
 		<h4>Lost Nomad</h4>
@@ -139,7 +115,6 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8 mx-auto">
-
 						<h2 class="modal-body" id="lostnomadPop">Lost Nomad</h2>
 						<p class="item-intro text-muted">Developed with Unreal Engine & C++</p>
 						<iframe width="640" height="480" src="https://www.youtube.com/embed/hp6DQlugUoo?controls=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -160,7 +135,38 @@
 	</div>
 </div>
 
+<!--Modal 2 -->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 mx-auto">
+						<h2 class="modal-body" id="lostnomadPop">Lost Nomad</h2>
+						<p class="item-intro text-muted">Developed with Unreal Engine & C++</p>
+						<img class="img-fluid">
+						<p>Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad</p>
 
+						<br>
+						<br>
+						<a href="https://gamejolt.com/@SpiciestMeatball">
+							<button class="btn btn-primary" type="button">
+								<i class="fas fa-gamepad"></i>
+								View Game Page
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 <!--- Project Cards 
@@ -208,37 +214,34 @@
 		</div>
 	</div>
 
-	<div id="collapse1"  class="collapse hide" aria-labelledby="card1" >
-      <div class="card-body">
-        Lost nomad info & pics
-      </div>
-    </div>
-   	<div id="collapse2"  class="collapse hide" aria-labelledby="card2" >
-      <div class="card-body">
-        Burning of the vainities info & pics
-      </div>
-    </div>
-   	<div id="collapse3"  class="collapse hide" aria-labelledby="card3" >
-      <div class="card-body">
-        sudoku info & pics
-      </div>
-    </div>
-   	<div id="collapse4"  class="collapse hide" aria-labelledby="card4" >
-      <div class="card-body">
-        Physics Birds info & pics
-      </div>
-    </div>
+-->
 
+<!--- About Me Section -->
 
-<div id="accordian">
+<div class="container-fluid padding bg-light" id="aboutMe">
+<br>
+<br>
+<br>
+<div class="row padding justify-content-center">
+	<div class="col-lg-5">
+		<img src="img/me1.png" class="img-fluid">
+	</div>
+	<div class="col-lg-4 my-auto">
+		<h2> About Me</h2>
+		<p>I am a software engineer who loves developing and playing games. I also have an avid passion for sports such as snowboarding and mountain biking. </p>
+		<p>I recently graduated with a <i>Bachelor of Software Engineering</i> specializing in <i>Game Programming</i> from Media Design School in Auckland New Zealand.
+		I have a lot of experience making games using <i>C++</i> with <i>OpenGL</i> and working with <i>Unreal Engine</i> and <i>Unity</i>. All as solo work, or part of a team with other artists and programmers. I am a strong advocate for success through teamwork, leadership and an overall positive approach to problem solving.</p>		
+		<br>
+		<a href="mailto: jjnewman253@gmail.com" class="btn btn-primary">Let's Get in Touch!</a>
+
+	</div>
+
+</div>
 </div>
 
-aria-expanded="false" aria-controls="collapseOne"
-
-aria-labelledby="card1" data-parent="#accordion"
--->
 <br>
-
+<br>
+<br>
 
 <!--- Skills Section -->
 <div class="container-fluid padding">
@@ -272,20 +275,16 @@ aria-labelledby="card1" data-parent="#accordion"
 	</div>
 </figure>
 <!--- Connect -->
-<div class="container-fluid padding">
-<div class="row text-center padding">
-	<div class="col-12">
-		<h2> Connect</h2>
-	</div>
-	<div class="col-12 social padding">
+<br>
+
+<div class="row text-center">
+	<div class="col-12 social">
 		<a href="https://www.linkedin.com/in/josephnewman253/"><i class="fab fa-linkedin"></i></a>
-		<a href="https://twitter.com/spicy_newman/"><i class="fab fa-twitter"></i></a>
-		<a href="mailto: jjnewman253@gmail.com"><i class="fas fa-envelope"></i></a>
+		<a href="https://twitter.com/spicy_newman/" target="_blank"><i class="fab fa-twitter"></i></a>
+		<a href="mailto: jjnewman253@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
 	</div>
-
 </div>
-</div>
-
+<br>
 <!--- Footer -->
 <footer>
 	<div class="container-fluid padding">
