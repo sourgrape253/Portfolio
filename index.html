@@ -24,7 +24,7 @@
 
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark ">
 <div class="container-fluid">
 <a class="navbar-brand"><span class="mb-0 h6">Joseph Newman</span></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -42,10 +42,9 @@
 				<a class="nav-link" href="#contact">Contact</a>
 			</li>
 	</div>
-
 </div>
-
 </nav>
+
 <!--- Image Slider -->
 <div id="slides" class="carousel slide carousel-fade" data-ride="carousel">
 	<ul class="carousel-indicators">
@@ -57,22 +56,19 @@
 	<div class="carousel-caption">
 		<h1 class="display-2">Joseph Newman</h1>
 		<h3>Graduate Software Engineer</h3>
-		<a class="nav-link" href="#projects"> <button type="button" class="btn btn-outline-light btn-lg">My Portfolio</button></a>
+		<a class="nav-link" href="#portfolio"> <button type="button" class="btn btn-outline-light btn-lg">My Portfolio</button></a>
 	</div>
 	<div class="carousel-item active">
-		<img class="d-block w-100" src="img/dice1.png">
+		<img class="d-block w-100 h-100" src="img/dice1.png">
 	</div>
 	<div class="carousel-item">
-		<img class="d-block w-100" src="img/mountain1.png">
+		<img class="d-block w-100 h-100" src="img/mountain1.png">
 	</div>
 	<div class="carousel-item">
-		<img class="d-block w-100" src="img/beach1.png">
+		<img class="d-block w-100 h-100" src="img/beach1.png">
 	</div>
 </div>
 </div>
-
-
-
 
 
 <!--- Portfolio Section -->
@@ -80,7 +76,7 @@
 <div class="container">
 <div class="row">
 	<div class="col-lg-12 text-center">
-		<h2 class="section-heading">Portfolio</h2>
+		<h2 class="section-heading"><br>Portfolio</h2>
 	</div>
 	<hr>
 </div>
@@ -124,7 +120,7 @@
 	</a>
 	<div class="portfolio-caption">
 		<h4>Sudoku</h4>
-		<p class="text-muted">Windows API, Lua</p>
+		<p class="text-muted">LOVE2D, Lua</p>
 	</div>
 </div>
 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -134,11 +130,11 @@
 				<i class="fa fa-plus fa-3x"></i>
 			</div>
 		</div>
-		<img class="img-fluid" src="img/physicsBirds.png" alt="">
+		<img class="img-fluid" src="img/bird2.png" alt="">
 	</a>
 	<div class="portfolio-caption">
 		<h4>Physics Birds</h4>
-		<p class="text-muted">Windows API, C++</p>
+		<p class="text-muted">OpenGL, C++</p>
 	</div>
 </div>
 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -148,7 +144,7 @@
 				<i class="fa fa-plus fa-3x"></i>
 			</div>
 		</div>
-		<img class="img-fluid" src="img/lostNomad1.png" alt="">
+		<img class="img-fluid" src="img/lostNomad1.png" alt="" id="img-blur">
 	</a>
 	<div class="portfolio-caption">
 		<h4>Cloth Simulator</h4>
@@ -177,9 +173,9 @@
 							<h2 class="text-uppercase"> Lost Nomad</h2>
 							<p class="item-intro text-muted">Developed with Unreal Engine & C++</p>
 							<img class="img-fluid d-block mx-auto" src="img/LostNomadPoster.png" alt="">
-							<p>Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad Lost Nomad</p>
+							<p>Lost Nomad is a futuristic, first-person, 3D platformer. You play as the survivor of crashed transport ship and with your oxygen supply running out, you must quickly navigate through a harsh environment in order to try and find a way home.</p>
+							<p>This game was deveoped with a small team consisting of 2 artists and myself as the programmer. The game was made using a mixture of Unreal Engine's blueprinting system and C++. I was responsible for all the rogramming; including gameplay, UI/UX, and level design.</p>
 
-						<br>
 						<br>
 						<a href="https://gamejolt.com/@SpiciestMeatball">
 							<button class="btn btn-primary" type="button">
@@ -212,16 +208,17 @@
 							<h2 class="text-uppercase"> Burning of the Vanities</h2>
 							<p class="item-intro text-muted">Developed with Unreal Engine & C++</p>
 							<img class="img-fluid d-block mx-auto" src="img/gif/bookBurn.gif" alt="">
-							<p>Burning of the Vanities Burning of the Vanities Burning of the Vanities Burning of the Vanities Burning of the Vanities Burning of the Vanities Burning of the Vanities Burning of the Vanities Burning of the Vanities Burning of the Vanities Burning of the Vanities Burning of the Vanities Burning of the Vanities </p>
-
+							<p>Burning of the Vanities is a first-person, book-burning simulator. It is a proof of concept 
+								focusing on the socio-political system of fascism. As the player, you are provided with 10 books
+								 a day to either keep or destroy. Destroying the books maintains order and control. Keeping the books,
+								 allows the world to read them and become more chaotic and fight the faces of order and control.</p>
+								 <p>This prototype/proof of concept was made in a few days by a team of 4 (2 artists and 2 programmers). 
+								 I was responsible for the gameplay and physics using Unreal Engine Blueprints and C++.</p>
 						<br>
-						<br>
-						<a href="https://gamejolt.com/@SpiciestMeatball">
-							<button class="btn btn-primary" type="button">
-								<i class="fas fa-gamepad"></i>
-								View Game Page
+							<button class="btn btn-primary" data-dismiss="modal" type="button">
+								<i class="fa fa-times"></i>
+								Close
 							</button>
-						</a>
 						</div>
 					</div>
 				</div>
@@ -244,16 +241,18 @@
 					<div class="col-lg-8 mx-auto">
 						<div class="modal-body" id="sudokuPop">
 							<h2 class="text-uppercase">Sudoku</h2>
-							<p class="item-intro text-muted">Developed with Windows API using C++</p>
-							<img class="img-fluid d-block mx-auto" src="img/LostNomadPoster.png" alt="">
-							<p>Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku Sudoku </p>
+							<p class="item-intro text-muted">Developed with LOVE2D using Lua</p>
+							<img class="img-fluid d-block mx-auto" src="img/sudokuCap.png" alt="">
+							<p>A simple sudoku puzzle solver. I made this using the LOVE2D game engine. 
+							It was also my first project on the engine and using Lua as a language. Essentially
+							 it will solve any sudoku you enter into it. You can also randomly generate your own puzzles with varying 
+							 difficulty to test your skills.</p>
 
 						<br>
-						<br>
-						<a href="https://gamejolt.com/@SpiciestMeatball">
+						<a href="files/Sudoku - Joseph Newman.zip">
 							<button class="btn btn-primary" type="button">
-								<i class="fas fa-gamepad"></i>
-								View Game Page
+								<i class="fas fa-download"></i>
+								Download
 							</button>
 						</a>
 						</div>
@@ -278,18 +277,15 @@
 					<div class="col-lg-8 mx-auto">
 						<div class="modal-body" id="physicsbirdsPop">
 							<h2 class="text-uppercase">Physics Birds</h2>
-							<p class="item-intro text-muted">Developed with Windows API using C++</p>
-							<img class="img-fluid d-block mx-auto" src="img/physicsBirds.png" alt="">
-							<p>Physics Birds Physics Birds Physics Birds Physics Birds Physics Birds Physics Birds Physics Birds Physics Birds Physics Birds Physics Birds Physics Birds Physics Birds Physics Birds Physics Birds Physics Birds </p>
+							<p class="item-intro text-muted">Developed with OpenGL using C++</p>
+							<img class="img-fluid d-block mx-auto" src="img/bird1.png" alt="">
+							<p>This was a game I made using OpenGL. It runs 3 levels simulating the game Angry Birds. You can shoot 3 birds at the pigs and the blocks and they all have simulated physics. It was my first experience working with physics outside of big engine like Unreal or Unity, and thus, quite the learning curve.</p>
 
 						<br>
-						<br>
-						<a href="https://gamejolt.com/@SpiciestMeatball">
-							<button class="btn btn-primary" type="button">
-								<i class="fas fa-gamepad"></i>
-								View Game Page
+							<button class="btn btn-primary" data-dismiss="modal" type="button">
+								<i class="fa fa-times"></i>
+								Close
 							</button>
-						</a>
 						</div>
 					</div>
 				</div>
@@ -314,16 +310,13 @@
 							<h2 class="text-uppercase">Cloth Simulator</h2>
 							<p class="item-intro text-muted">Developed with OpenGL using C++</p>
 							<img class="img-fluid d-block mx-auto" src="img/physicsBirds.png" alt="">
-							<p>Cloth Simulator Cloth Simulator Cloth Simulator Cloth Simulator Cloth Simulator Cloth Simulator Cloth Simulator Cloth Simulator Cloth Simulator Cloth Simulator Cloth Simulator Cloth Simulator Cloth Simulator Cloth Simulator </p>
+							<p>This was an experiment with simulated cloth physics using OpenGL and C++. You can grow the colth, use various shapes to interact with it, cut holes in it, blow wind on it, and drag it around the scene. I made this after the angry birds project (and playing a lot of the Batman games). </p>
 
 						<br>
-						<br>
-						<a href="https://gamejolt.com/@SpiciestMeatball">
-							<button class="btn btn-primary" type="button">
-								<i class="fas fa-gamepad"></i>
-								View Game Page
+							<button class="btn btn-primary" data-dismiss="modal" type="button">
+								<i class="fa fa-times"></i>
+								Close
 							</button>
-						</a>
 						</div>
 					</div>
 				</div>
@@ -332,56 +325,11 @@
 	</div>
 </div>
 
-<!--- Project Cards 
-<div class="container-fluid padding">
-<div id="accordian">
-<div class="row padding">
-	<div class="col-sm-3">
-		<div class="card">
-			<a id="card1" data-toggle="collapse" data-target="#collapse1" role="button" aria-expanded="false" aria-controls="collapseOne" >
-			<img class="card-img-top" src="img/lostNomad1.png">
-			<div class="card-cover">
-				<h4 class="card-title">Lost Nomad</h4>
-			</div>
-		</a>
-		</div>
-	</div>
-	<div class="col-sm-3">
-		<div class="card">
-			<a id="card2" data-toggle="collapse" data-target="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2" >
-			<img class="card-img-top" src="img/booksMenu.png">
-			<div class="card-cover">
-				<h4 class="card-title">Burning of the Vainities</h4>
-			</div>
-		</a>
-		</div>
-	</div>
-	<div class="col-sm-3">
-		<div class="card">
-			<a id="card3" data-toggle="collapse" data-target="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3" >
-			<img class="card-img-top" src="img/sudokuLua.png">
-			<div class="card-cover">
-				<h4 class="card-title">Sudoku</h4>
-			</div>
-		</a>
-		</div>
-	</div>
-	<div class="col-sm-3">
-		<div class="card">
-			<a id="card4" data-toggle="collapse" data-target="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4" >
-			<img class="card-img-top" src="img/physicsBirds.png">
-			<div class="card-cover">
-				<h4 class="card-title">Physics Birds</h4>
-			</div>
-		</a>
-		</div>
-	</div>
 
--->
 
 <!--- About Me Section -->
 
-<div class="container-fluid padding bg-light" id="aboutMe">
+<div class="container-fluid padding" id="aboutMe">
 <br>
 <br>
 <br>
@@ -407,23 +355,23 @@
 <br>
 
 <!--- Skills Section -->
-<div class="container-fluid padding">
+<div class="container-fluid padding bg-light">
 <div class="row text-center padding">
 	<div class="col-xs-12 col-sm-6 col-md-4">
 		<i class="fas fa-code"></i>
 			<h3>Languages</h3>
-			<p>C++</p> <p>C#</p> <p>Lua</p>
+			<p>C++</p> <p>C#</p> <p>Lua</p><p>HTML/CSS</p>
 	</div>
 	<div class="col-xs-12 col-sm-6 col-md-4">
 		<i class="fas fa-cog"></i>
 			<h3>Engines</h3>
-			<p>Unreal Engine 4</p> <p>Unity 3D</p>
+			<p>Unreal Engine</p> <p>Unity</p><p>Love2D</p>
 	</div>
 	<div class="col-sm-12 col-md-4">
 		<i class="fas fa-graduation-cap"></i>
 			<h3>Qualifications</h3>
-			<p>Bachelor of Software Engineering - 
-			Game Programming </p>
+			<p>Bachelor of Software Engineering -</p>
+			<p>Game Programming </p>
 	</div>
 
 </div>
@@ -440,12 +388,14 @@
 <!--- Connect -->
 <br>
 
+<div class="container-fluid padding">
 <div class="row text-center" id="contact">
 	<div class="col-12 social">
 		<a href="https://www.linkedin.com/in/josephnewman253/"><i class="fab fa-linkedin"></i></a>
 		<a href="https://twitter.com/spicy_newman/" target="_blank"><i class="fab fa-twitter"></i></a>
 		<a href="mailto: jjnewman253@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
 	</div>
+</div>
 </div>
 <br>
 <!--- Footer -->

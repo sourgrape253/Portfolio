@@ -6,9 +6,10 @@ html, body{
   font-family: 'Poppins', sans-serif; 
   color: #222;
   scroll-behavior: smooth;
+
 }
-navbar{
-  padding: .8rem;
+.navbar{
+  overflow: hidden;
 }
 nav-link{
   font-size: 1.1em !important;
@@ -18,18 +19,13 @@ nav-link{
   text-align: right; 
 }
 
-
-.img-project{
-  width: 100%;
-  height: 100%;
-}
-
 #aboutMe .img-fluid{
 border-radius: 50%;
+padding: 3.5rem;
 }
-.carousel-inner img{
-  width: 100%;
-  height: 100%;
+.carousel-inner .carousel-item{
+  max-width: 100%;
+  max-height: 100%;
 }
 .carousel-item:after{
   content:"";
@@ -218,18 +214,7 @@ figure {
     padding: 1rem;
 }
 
-.iframe-container{
-  position: relative;
-  width: 100%
-  
-  height: 0;
-}
-.iframe-container iframe{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+
 }
 
 /*modal styling*/
@@ -259,11 +244,22 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 400px;
+  display: block;
+  max-width: 300px;
+  max-height: 200px;
   margin: 0 auto;
   cursor: pointer;
+  overflow: hidden;
+}
+
+#portfolio .portfolio-item .portfolio-link img {
+  max-width: 400px;
+  max-height: 200px;
+  transition: transform 0.7s ease;
+  text-align: center;
+}
+#portfolio .portfolio-item .portfolio-link:hover img {
+transform: scale(1.1);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -274,8 +270,9 @@ section h3.section-subheading {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(40, 28, 69, 0.6);
+  background: rgba(40, 28, 69, 0.4);
 }
+
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1;
@@ -302,7 +299,7 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item .portfolio-caption {
-  max-width: 400px;
+  max-width: 300px;
   margin: 0 auto;
   padding: 25px;
   text-align: center;
@@ -325,15 +322,14 @@ section h3.section-subheading {
   z-index: 2;
 }
 
-
-
 .portfolio-modal {
   padding-right: 0px !important;
 }
 
 .portfolio-modal .modal-dialog {
   margin: 1rem;
-  max-width: 100vw;
+  max-width: 100%;
+
 }
 
 .portfolio-modal .modal-content {
@@ -357,12 +353,7 @@ section h3.section-subheading {
   font-style: italic;
   margin: 20px 0 30px;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-align: center;
-}
-
-.portfolio-modal .modal-content ul.list-inline {
-  margin-top: 0;
-  margin-bottom: 30px;    
+  text-align: center;
 }
 
 .portfolio-modal .modal-content img {
